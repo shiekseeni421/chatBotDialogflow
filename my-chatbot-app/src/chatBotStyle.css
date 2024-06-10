@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.Chatbot-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+}
+
+.chatbot-navbar {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px 0px 10px;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 8px;
+  background-image: linear-gradient(to right, #72a948, #0fab81);
+}
+.chatBot {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0px 10px 0 #00000096;
+}
+
+.chatbot-body {
+  height: 400px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  scrollbar-width: none;
+}
+
+.input-container {
+  height: 40px;
+  width: 100%;
+  display: flex;
+}
+
+.input-mic {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.chat-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  padding: 0px 5px;
+  text-transform: capitalize;
+}
+
+.Button {
+  cursor: pointer;
+  font-size: 40px;
+  color: green;
+}
+
+.bot {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.user-containt {
+  margin: 20px 10px;
+  display: flex;
+}
+
+.user-response {
+  background-color: #dafaf1;
+  padding: 15px 25px;
+  display: inline;
+  border-radius: 20px 0px 20px 20px;
+  font-size: 15px;
+}
+.bot-response {
+  margin-top: 10px;
+  background-color: #dafaf1;
+  padding: 10px;
+  border-radius: 20px 20px 20px 0px;
+  width: 65%;
+  font-size: 15px;
+}
+.bot-image {
+  height: 30px;
+  width: 30px;
+}
+
+.user-image {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.TimeStap {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.bot-containt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.card {
+  display: flex;
+  border-radius: 15px;
+  flex-wrap: wrap;
+}
+
+.cardButton {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.chatBotIcons {
+  cursor: pointer;
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 30px;
+  margin-top: 10px;
+  aspect-ratio: 2;
+  --_color1: #228f3f; /* Change to your preferred color */
+  --_color2: #228f3f; /* Change to your preferred color */
+  --_color3: #228f3f; /* Change to your preferred color */
+  --_g: no-repeat
+      radial-gradient(circle closest-side, var(--_color1) 90%, #0000),
+    no-repeat radial-gradient(circle closest-side, var(--_color2) 90%, #0000),
+    no-repeat radial-gradient(circle closest-side, var(--_color3) 90%, #0000);
+  background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+  background-size: calc(100% / 3) 50%;
+  animation: l3 1s infinite linear;
+}
+
+@keyframes l3 {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+}
+
+:where(.css-dev-only-do-not-override-17seli4).ant-dropdown
+  .ant-dropdown-menu
+  .ant-dropdown-menu-item:hover,
+:where(.css-dev-only-do-not-override-17seli4).ant-dropdown-menu-submenu
+  .ant-dropdown-menu
+  .ant-dropdown-menu-item:hover,
+:where(.css-dev-only-do-not-override-17seli4).ant-dropdown
+  .ant-dropdown-menu
+  .ant-dropdown-menu-submenu-title:hover,
+:where(.css-dev-only-do-not-override-17seli4).ant-dropdown-menu-submenu
+  .ant-dropdown-menu
+  .ant-dropdown-menu-submenu-title:hover,
+:where(.css-dev-only-do-not-override-17seli4).ant-dropdown
+  .ant-dropdown-menu
+  .ant-dropdown-menu-item-active,
+:where(.css-dev-only-do-not-override-17seli4).ant-dropdown-menu-submenu
+  .ant-dropdown-menu
+  .ant-dropdown-menu-item-active,
+:where(.css-dev-only-do-not-override-17seli4).ant-dropdown
+  .ant-dropdown-menu
+  .ant-dropdown-menu-submenu-title-active,
+:where(.css-dev-only-do-not-override-17seli4).ant-dropdown-menu-submenu
+  .ant-dropdown-menu
+  .ant-dropdown-menu-submenu-title-active {
+  background-color: #87c798;
+  color: white;
+}
